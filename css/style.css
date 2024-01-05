@@ -359,6 +359,10 @@ template {
   display: none !important;
 }
 
+.hidden {
+  display: none !important;
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
@@ -527,7 +531,15 @@ mark,
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
+}
+
+.portfolio-img{
+  width: 100%;
+    height: 200px; /* Set the desired height */
+    display: block;
+    object-fit: cover; /* Maintain aspect ratio while covering the specified height */
+    transition: transform 0.3s ease;
 }
 
 .img-thumbnail {
@@ -536,7 +548,7 @@ mark,
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
-  height: auto;
+  height: 200px;
 }
 
 .figure {
@@ -6394,24 +6406,28 @@ button.bg-info:focus {
   background-color: #117a8b !important;
 }
 
-.bg-warning {
-  background-color: #ffc107 !important;
+.bg-django {
+  background-color: #078571 !important;
 }
 
-a.bg-warning:hover, a.bg-warning:focus,
-button.bg-warning:hover,
-button.bg-warning:focus {
+a.bg-django:hover, a.bg-django:focus,
+button.bg-django:hover,
+button.bg-django:focus {
   background-color: #d39e00 !important;
 }
 
-.bg-danger {
-  background-color: #dc3545 !important;
+.bg-ts {
+  background-color: #007bff !important;
 }
 
-a.bg-danger:hover, a.bg-danger:focus,
-button.bg-danger:hover,
-button.bg-danger:focus {
+a.bg-ts:hover, a.bg-ts:focus,
+button.bg-ts:hover,
+button.bg-ts:focus {
   background-color: #bd2130 !important;
+}
+
+.bg-html {
+  background-color: orange !important;
 }
 
 .bg-light {
@@ -6424,13 +6440,13 @@ button.bg-light:focus {
   background-color: #e6e6e6 !important;
 }
 
-.bg-dark {
-  background-color: #343a40 !important;
+.bg-ang {
+  background-color: var(--red) !important;
 }
 
-a.bg-dark:hover, a.bg-dark:focus,
-button.bg-dark:hover,
-button.bg-dark:focus {
+a.bg-ang:hover, a.bg-ang:focus,
+button.bg-ang:hover,
+button.bg-ang:focus {
   background-color: #1d2124 !important;
 }
 

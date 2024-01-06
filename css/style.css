@@ -582,6 +582,29 @@ mark,
 }
 
 
+/* Media query for large screens (Bootstrap's lg breakpoint and above) */
+@media (min-width: 992px) {
+  /* Adjust the top property for each column */
+  #qualification .row > div:nth-child(1) { /* First column */
+      top: 0px; /* Adjust this value as needed */
+  }
+  #qualification .row > div:nth-child(2) { /* Second column */
+      top: -110px; /* Adjust this value as needed */
+  }
+  #qualification .row > div:nth-child(3) { /* Third column */
+      top: -50px; /* Adjust this value as needed */
+  }
+
+  /* Ensure the columns use relative positioning for the top adjustment to take effect */
+  #qualification .row > div {
+      position: relative;
+  }
+}
+
+
+
+
+
 
 
 

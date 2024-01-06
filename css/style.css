@@ -589,10 +589,10 @@ mark,
       top: 0px; /* Adjust this value as needed */
   }
   #qualification .row > div:nth-child(2) { /* Second column */
-      top: -110px; /* Adjust this value as needed */
+      top: -50px; /* Adjust this value as needed */
   }
   #qualification .row > div:nth-child(3) { /* Third column */
-      top: -50px; /* Adjust this value as needed */
+      top: 10px; /* Adjust this value as needed */
   }
 
   /* Ensure the columns use relative positioning for the top adjustment to take effect */
